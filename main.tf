@@ -1,6 +1,8 @@
-resource "alicloud_eip" "default" {
-  bandwidth            = var.eip_bandwidth
+resource "alicloud_eip_address" "default" {
+  address_name         = var.name
+  isp                  = var.eip_isp
   internet_charge_type = var.eip_internet_charge_type
+  payment_type         = var.eip_payment_type
 }
 
 resource "alicloud_vpc" "default" {
@@ -39,4 +41,3 @@ resource "alicloud_instance" "default" {
     encrypted   = true
   }
 }
-

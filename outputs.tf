@@ -11,7 +11,7 @@ output "this_alicloud_vswitch" {
 }
 
 output "this_eip_id" {
-  value = alicloud_eip.default.id
+  value = alicloud_eip_address.default.id
 }
 
 output "this_ecs_name" {

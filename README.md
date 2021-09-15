@@ -9,9 +9,9 @@ This module is used to create a lightweight web service under Alibaba Cloud VPC,
 
 These types of resources are supported:
 
-* [alicloud_instance](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/instance)
-* [alicloud_eip](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/eip)
 * [alicloud_vpc](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpc)
+* [alicloud_instance](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/instance)
+* [alicloud_eip_address](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/eip_address)
 
 ## Usage
 
@@ -33,13 +33,13 @@ module "example" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | > = 0.13.0 |
-| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | > = 1.123.1 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | > = 1.126.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | > = 1.123.1 |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | > = 1.126.1 |
 
 ## Submit Issues
 
