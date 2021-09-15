@@ -84,3 +84,17 @@ variable "eip_payment_type" {
   description = "The payment type of EIP address."
   default     = "PayAsYouGo"
 }
+
+variable "primary_ip_address" {
+  default = "172.16.0.1"
+}
+
+variable "eip_instance_type" {
+  description = "The instance type of EIP."
+  default     = "NetworkInterface"
+}
+
+variable "secondary_private_ip_address_count" {
+  description = "The secondary private ip address count of EIP."
+  default     = 1
+}
