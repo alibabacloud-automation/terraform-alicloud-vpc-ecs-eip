@@ -58,66 +58,6 @@ variable "category" {
   default     = "cloud_efficiency"
 }
 
-variable "engine" {
-  description = "The specification of the engine."
-  type        = string
-  default     = "MySQL"
-}
-
-variable "engine_version" {
-  description = "The specification of the engine version."
-  type        = string
-  default     = "5.6"
-}
-
-variable "rds_instance_type" {
-  description = "The specification of the rds instance type."
-  type        = string
-  default     = "rds.mysql.s2.large"
-}
-
-variable "instance_storage" {
-  description = "The specification of the instance storage."
-  type        = string
-  default     = "30"
-}
-
-variable "instance_charge_type" {
-  description = "The specification of the instance charge type."
-  type        = string
-  default     = "Postpaid"
-}
-
-variable "monitoring_period" {
-  description = "The specification of the monitoring period."
-  type        = string
-  default     = "60"
-}
-
-variable "slb_address_type" {
-  description = "The specification of the slb intranet."
-  type        = string
-  default     = "intranet"
-}
-
-variable "slb_spec" {
-  description = "The specification of the slb spec."
-  type        = string
-  default     = "slb.s2.small"
-}
-
-variable "slb_tags_info" {
-  description = "The specification of the slb tags info."
-  type        = string
-  default     = "create for internet"
-}
-
-variable "eip_bandwidth" {
-  description = "The specification of the eip bandwidth."
-  type        = string
-  default     = "10"
-}
-
 variable "eip_internet_charge_type" {
   description = "The specification of the eip internet charge type."
   type        = string
@@ -133,4 +73,14 @@ variable "availability_zone" {
 variable "cidr_block" {
   description = "The cidr block of VPC"
   default     = "172.16.0.0/16"
+}
+
+variable "eip_isp" {
+  description = "The ISP of EIP address."
+  default     = "BGP"
+}
+
+variable "eip_payment_type" {
+  description = "The payment type of EIP address."
+  default     = "PayAsYouGo"
 }
