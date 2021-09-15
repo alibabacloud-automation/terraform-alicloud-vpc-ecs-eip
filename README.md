@@ -12,6 +12,8 @@ These types of resources are supported:
 * [alicloud_vpc](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpc)
 * [alicloud_instance](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/instance)
 * [alicloud_eip_address](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/eip_address)
+* [alicloud_network_interface](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/network_interface)
+* [alicloud_eip_association](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/eip_association)
 
 ## Usage
 
