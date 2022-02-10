@@ -48,10 +48,10 @@ resource "alicloud_instance" "default" {
   image_id                   = var.image_id
   internet_max_bandwidth_out = var.internet_max_bandwidth_out
   data_disks {
-    name        = var.name
+    name        = var.data_disks_name
     size        = var.ecs_size
     category    = var.category
     description = var.description
-    encrypted   = true
+    encrypted   = var.encrypted
   }
 }
