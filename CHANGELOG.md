@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/alibabacloud-automation/terraform-alicloud-vpc-ecs-eip/compare/v1.0.2...v2.0.0) (2026-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* add provider version constraint for aliyun/alicloud
+
+### Features
+
+* add provider version constraint for aliyun/alicloud ([6ec3787](https://github.com/alibabacloud-automation/terraform-alicloud-vpc-ecs-eip/commit/6ec378740066abd119fc80ff4284694905cf21dc))
+
 ## [1.0.2](https://github.com/alibabacloud-automation/terraform-alicloud-vpc-ecs-eip/compare/v1.0.1...v1.0.2) (2025-10-16)
 
 
