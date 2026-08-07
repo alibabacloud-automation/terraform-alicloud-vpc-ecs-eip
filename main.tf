@@ -22,7 +22,7 @@ resource "alicloud_eip_address" "default" {
   payment_type         = var.eip_payment_type
 }
 
-resource "alicloud_network_interface" "default" {
+resource "alicloud_ecs_network_interface" "default" {
   network_interface_name             = var.name
   vswitch_id                         = alicloud_vswitch.default.id
   security_group_ids                 = [alicloud_security_group.default.id]
@@ -33,7 +33,7 @@ resource "alicloud_network_interface" "default" {
 resource "alicloud_eip_association" "default" {
   allocation_id = alicloud_eip_address.default.id
   instance_type = var.eip_instance_type
-  instance_id   = alicloud_network_interface.default.id
+  instance_id   = alicloud_ecs_network_interface.default.id
 }
 
 resource "alicloud_instance" "default" {
